@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Minesweeper</title>
+
+        <link type="text/css" rel="stylesheet" href="./css/style.css" />
+        <script type="text/javascript" src="js/minesweeper.js" ></script>
+
+    </head>
+
+    <body>
+        <h1> Minesweeper </h1>
+
+        <div>
+            <select id="difficulty">
+               <option selected value="0">Easy</option>
+               <option value="1">Medium</option>
+               <option value="2">Hard</option>
+            </select>
+            
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <span>Remaining Mines:</span>
+            <span id="flagCount" > </span>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <span>Time:</span>
+            <span id="timer" > </span>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        </div>
+        
+        <div id="smiley" class="smiley"></div>
+        
+        <div id="minefield" gridX="10" gridY="10" mines="10"></div>
+    </body>
+</html>
